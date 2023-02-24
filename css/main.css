@@ -32,6 +32,21 @@ body {
 main {
   display: block;
 }
+/* Styles for the header section */
+  web-header {
+  background-color: #c2e6e0;
+  color: #330a0c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  }
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
