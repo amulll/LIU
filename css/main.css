@@ -2720,6 +2720,8 @@ body {
     background-color: rgba(255, 255, 255, 0);
     padding: 50px;
     text-align: center;
+    vertical-align: top; 
+  
     }
     
     #projects h2 {
@@ -2736,6 +2738,7 @@ body {
     }
     
     .project {
+    vertical-align: top; 
     display: inline-block;
     margin-right: 30px;
     margin-bottom: 30px;
