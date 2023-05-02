@@ -47,6 +47,7 @@ main {
   left: 0;
   right: 0;
   z-index: 1;
+  transition: opacity 0.5s ease-in-out;
   }
 
   web-header h1 {
