@@ -22,6 +22,7 @@
   --highlight-gutter-background: #dedede;
   --highlight-gutter-foreground: #555;
 }
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -34,7 +35,7 @@ main {
 }
 /* Styles for the header section */
   web-header {
-  background-color: #c2e6e0;
+  background-color: rgba(255, 255, 255, 0);
   color: #330a0c;
   display: flex;
   flex-direction: row;
@@ -46,11 +47,14 @@ main {
   left: 0;
   right: 0;
   z-index: 1;
+  transition: opacity 0.5s ease-in-out;
   }
 
   web-header h1 {
-  font-size: 32px;
-  margin: 0;
+  font-size: 48px;
+  margin: 6px;
+  color: #eaf5f3;
+  font-family: "Noto Sans TC";
   }
   
   ul {
@@ -59,10 +63,12 @@ main {
   list-style: none;
   margin-right: 10px;
   padding: 0;
+  
   }
   
   nav li {
   margin-left: 30px;
+  
   }
   
   nav li:first-child {
@@ -70,12 +76,12 @@ main {
   }
   
   nav a {
-  color: #263131;
+  color: #d2f7f5;
   text-decoration: none;
   }
   
   nav a:hover {
-  color: #4980a0;
+  color: #ffffff;
   }
 h1 {
   font-size: 2em;
@@ -232,6 +238,7 @@ body {
   min-height: 100%;
   position: relative;
   transition: padding 0.2s ease-in-out;
+  font-family: "Noto Sans TC";
 }
 h1,
 h2,
@@ -2671,62 +2678,172 @@ ul.breadcrumb li:last-child {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 body {
+  /*  記得修改位置 */
   background: url("/images/bg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
 }
+  /*  業務介紹 成品分享 */
+  #services {
+    
+    background-color: rgba(255, 255, 255, 0);
+    padding: 50px;
+    text-align: center;
+    }
+    
+    #services h2 {
+     text-shadow:
+      -1px -1px 0 #939ea7,
+      1px -1px 0 #939ea7,
+      -1px 1px 0 #939ea7,
+      1px 1px 0 #939ea7;   
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Noto Sans TC";
+    color: #d2f7f5;
+    }
+    
+    #services p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #d2f7f5;
+    margin-bottom: 50px;
+    font-family: "Noto Sans TC";
+    }
+    
+    #projects {
+    
+    background-color: rgba(255, 255, 255, 0);
+    padding: 50px;
+    text-align: center;
+    vertical-align: top; 
+  
+    }
+    
+    #projects h2 {
+    text-shadow:
+      -1px -1px 0 #939ea7,
+      1px -1px 0 #939ea7,
+      -1px 1px 0 #939ea7,
+      1px 1px 0 #939ea7; 
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Noto Sans TC";
+    color: #d2f7f5;
+    }
+    
+    .project {
+    vertical-align: top; 
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 30%;
+    }
+    
+    .project img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    }
+    
+    .project p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #d2f7f5;
+    margin-bottom: 0;
+    font-family: "Noto Sans TC";
+    }
+    
+    .project:last-of-type {
+    margin-right: 0;
+    }
+/*  聯絡我們表單樣式 */
+#contact {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 50px;
+  
+}
 
-/* Styles for the contact form */
-  form {
-  background-color: #bcdce0;
-  padding: 20px;
+#contact h2 {
+  text-shadow:
+    -1px -1px 0 #939ea7,
+    1px -1px 0 #939ea7,
+    -1px 1px 0 #939ea7,
+    1px 1px 0 #939ea7;
   text-align: center;
-  }
-  
-  label {
+  font-size: 36px;
+  margin-bottom: 50px;
+  font-family: "Noto Sans TC";
+  color: #d2f7f5;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact label {
+  color: #d2f7f5;
   display: block;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
   margin-bottom: 10px;
-  margin-top: 10px;
-  text-align: left;
-  }
-  
-  input,
-  textarea {
-  border: 2px solid #333;
+  font-family: "Noto Sans TC";
+}
+
+#contact input,
+#contact textarea {
   padding: 10px;
-  width: 100%;
-  height: 16px;
-  }
-  
-  button[type="submit"] {
-  background-color: #333;
+  font-size: 18px;
   border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#contact textarea {
+  height: 150px;
+}
+
+#contact button {
+  background-color: #4CAF50;
   color: #fff;
-  cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
   padding: 10px 20px;
-  transition: background-color 0.3s ease-in-out;
-  }
-  
-  button[type="submit"]:hover {
-  background-color: #f2f2f2;
-  color: #333;
-  }
-  
-  /* Styles for the contact info */
-  .contact-info {
-  background-color: #333;
-  color: #fff;
-  padding: 80px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: #3e8e41;
+}
+
+.contact-info {
+  margin-top: 50px;
   text-align: center;
-  }
+  background-color: rgb(159, 173, 199,0.3);
   
-  .contact-info h3 {
+}
+
+.contact-info h3 {
+  text-shadow:
+    -1px -1px 0 #939ea7,
+    1px -1px 0 #939ea7,
+    -1px 1px 0 #939ea7,
+    1px 1px 0 #939ea7;
   font-size: 24px;
+<<<<<<< HEAD
   margin: 0;
   }
   
@@ -2749,7 +2866,39 @@ body {
   margin: 10px 0;
   
   }
-  
-  .contact-info i {
+=======
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #d2f7f5;
+
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #d2f7f5;
+
+}
+
+.contact-info ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.contact-info li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #d2f7f5;
+
+}
+
+.contact-info i {
   margin-right: 10px;
-  }
+  color: #36394b;
+}
+
+  
+>>>>>>> 2b40d1b3265856bfd8fb211714d658843d8a5c31
+  
