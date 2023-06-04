@@ -34,11 +34,11 @@ main {
   display: block;
 }
 /* Styles for the header section */
-  web-header {
+web-header {
   background-color: rgba(0, 0, 115, 100);
   /*color: #330a0c;*/
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 5px;
@@ -48,14 +48,15 @@ main {
   right: 0;
   z-index: 1;
   transition: opacity 0.5s ease-in-out;
-  }
+}
 
-  web-header h1 {
-  font-size: 48px;
-  margin: 0 0 0 10px;
+web-header h1 {
+  font-size: 6vw; /* 使用相对单位 vw 来设置字体大小 */
+  margin: 0 0 0 2vw; /* 使用相对单位 vw 来设置边距 */
   color: #eaf5f3;
   font-family: "Noto Sans TC";
-  }
+}
+
   
   ul {
   display: flex;
