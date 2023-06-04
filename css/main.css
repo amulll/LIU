@@ -49,22 +49,24 @@ main {
   z-index: 1;
   transition: opacity 0.5s ease-in-out;
 }
-@media screen and (max-width: 767px) {
-  /* 在宽度小于767px的屏幕上应用以下样式 */
-  web-header h1 {
-  font-size: 6vw; /* 使用相对单位 vw 来设置字体大小 */
-  margin: 0 0 0 2vw; /* 使用相对单位 vw 来设置边距 */
+web-header h1 {
+  font-size: 3vw; /* 在宽度大于等于 767px 的屏幕上应用的字体大小 */
+  margin: 0 0 0 2vw; /* 在宽度大于等于 767px 的屏幕上应用的边距 */
   color: #eaf5f3;
   font-family: "Noto Sans TC";
+}
+
+@media screen and (max-width: 767px) {
+  /* 在宽度小于 767px 的屏幕上应用以下样式 */
+  web-header h1 {
+    font-size: 6vw; /* 在宽度小于 767px 的屏幕上应用的字体大小 */
+    margin: 0 0 0 2vw; /* 在宽度小于 767px 的屏幕上应用的边距 */
+    color: #eaf5f3;
+    font-family: "Noto Sans TC";
     /* 其他手机样式 */
   }
 }
-  web-header h1 {
-  font-size: 3vw; /* 使用相对单位 vw 来设置字体大小 */
-  margin: 0 0 0 2vw; /* 使用相对单位 vw 来设置边距 */
-  color: #eaf5f3;
-  font-family: "Noto Sans TC";
-}
+
 
   
   web-header ul {
