@@ -13,3 +13,14 @@ window.addEventListener('scroll', function() {
 
   lastScrollPosition = scrollPosition;
 });
+const projects = document.querySelectorAll('.project');
+let currentProjectIndex = 0;
+
+function showNextProject() {
+  projects[currentProjectIndex].style.display = 'none';
+  currentProjectIndex = (currentProjectIndex + 1) % projects.length;
+  projects[currentProjectIndex].style.display = 'block';
+}
+
+projects[currentProjectIndex].style.display = 'block';
+document.addEventListener('click', showNextProject);

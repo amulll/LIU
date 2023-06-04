@@ -84,7 +84,7 @@ web-header h1 {
       display: flex;
       flex-direction: row;
       list-style: none;
-      margin-right: 2vw;
+      margin-right: 0vw;
       padding: 0;
       /* 其他手机样式 */
     }
@@ -2639,18 +2639,45 @@ body {
       padding: 10px;
       color: #fff;
     }
+    @media screen and (max-width: 767px) {
+      .project {
+        display: block;
+        margin-bottom: 30px;
+        width: 100%;
+      }
+      
+      .project-overlay {
+        position: static;
+        background-color: transparent;
+        padding: 0;
+      }
+      .project-overlay p {
+
+        font-size: 5vw;
+        line-height: 1.5;
+        margin-bottom: 0;
+        font-family: "Noto Sans TC";
+        }
+        .project-overlay h3 {
+          margin: 0;
+          font-size: 4vw;
+          font-family: "Noto Sans TC";
+        }
+    }
     .project-overlay p {
 
     font-size: 16px;
     line-height: 1.5;
-    color: #020a0a;
     margin-bottom: 0;
     font-family: "Noto Sans TC";
     }
+    
     .project-overlay h3 {
       margin: 0;
       font-size: 18px;
+      font-family: "Noto Sans TC";
     }
+    
     .project:last-of-type {
     margin-right: 0;
     }
