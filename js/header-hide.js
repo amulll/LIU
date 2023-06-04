@@ -13,14 +13,3 @@ window.addEventListener('scroll', function() {
 
   lastScrollPosition = scrollPosition;
 });
-const projects = document.querySelectorAll('.project');
-let currentProjectIndex = 0;
-
-function showNextProject() {
-  projects[currentProjectIndex].querySelector('.project-overlay').classList.remove('active');
-  currentProjectIndex = (currentProjectIndex + 1) % projects.length;
-  projects[currentProjectIndex].querySelector('.project-overlay').classList.add('active');
-}
-
-projects[currentProjectIndex].querySelector('.project-overlay').classList.add('active');
-document.addEventListener('click', showNextProject);
