@@ -2667,13 +2667,14 @@ body {
         top: 0;
         left: 0;
         background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        color: #fff;
       }
       
       .project-overlay p {
-        position: absolute;
         font-size: 5vw;
         line-height: 1.5;
-        margin-bottom: 0;
+        margin-bottom: 10px;
         font-family: "Noto Sans TC";
         color: #fff;
       }
