@@ -57,6 +57,21 @@ web-header h1 {
 }
 
 @media screen and (max-width: 767px) {
+  web-header {
+    background-color: rgba(0, 0, 115, 100);
+    /*color: #330a0c;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+    position: fixed;  
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
   /* 在宽度小于 767px 的屏幕上应用以下样式 */
   web-header h1 {
     font-size: 6vw; /* 在宽度小于 767px 的屏幕上应用的字体大小 */
@@ -64,7 +79,20 @@ web-header h1 {
     color: #eaf5f3;
     font-family: "Noto Sans TC";
     /* 其他手机样式 */
+    
   }
+  web-header ul {
+    font-size: 4vw;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    /* 其他手机样式 */
+  }
+  web-header nav li {
+    margin-left: 4vw;
+    
+    }
 }
 
 
@@ -77,18 +105,7 @@ web-header h1 {
   padding: 0;
   
   }
-  @media screen and (max-width: 767px) {
-    /* 在宽度小于 767px 的屏幕上应用以下样式 */
-    web-header ul {
-      font-size: 4vw;
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-      margin-right: 0vw;
-      padding: 0;
-      /* 其他手机样式 */
-    }
-  }
+  
   web-header nav li {
   margin-left: 30px;
   
