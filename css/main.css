@@ -34,7 +34,7 @@ main {
   display: block;
 }
 /* Styles for the header section */
-web-header {
+  web-header {
   background-color: rgba(0, 0, 115, 100);
   /*color: #330a0c;*/
   display: flex;
@@ -50,7 +50,7 @@ web-header {
   transition: opacity 0.5s ease-in-out;
 }
 
-web-header h1 {
+  web-header h1 {
   font-size: 6vw; /* 使用相对单位 vw 来设置字体大小 */
   margin: 0 0 0 2vw; /* 使用相对单位 vw 来设置边距 */
   color: #eaf5f3;
@@ -58,7 +58,7 @@ web-header h1 {
 }
 
   
-  ul {
+  web-header ul {
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -67,16 +67,16 @@ web-header h1 {
   
   }
   
-  nav li {
+  web-header nav li {
   margin-left: 30px;
   
   }
   
-  nav li:first-child {
+  web-header nav li:first-child {
   margin-left: 0;
   }
   
-  nav a {
+  web-header  nav a {
   color: #d2f7f5;
   text-decoration: none;
   }
