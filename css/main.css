@@ -51,7 +51,7 @@ main {
 }
 
   web-header h1 {
-  font-size: 6vw; /* 使用相对单位 vw 来设置字体大小 */
+  font-size: 3vw; /* 使用相对单位 vw 来设置字体大小 */
   margin: 0 0 0 2vw; /* 使用相对单位 vw 来设置边距 */
   color: #eaf5f3;
   font-family: "Noto Sans TC";
