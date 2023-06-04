@@ -17,10 +17,10 @@ const projects = document.querySelectorAll('.project');
 let currentProjectIndex = 0;
 
 function showNextProject() {
-  projects[currentProjectIndex].style.display = 'none';
+  projects[currentProjectIndex].querySelector('.project-overlay').classList.remove('active');
   currentProjectIndex = (currentProjectIndex + 1) % projects.length;
-  projects[currentProjectIndex].style.display = 'block';
+  projects[currentProjectIndex].querySelector('.project-overlay').classList.add('active');
 }
 
-projects[currentProjectIndex].style.display = 'block';
+projects[currentProjectIndex].querySelector('.project-overlay').classList.add('active');
 document.addEventListener('click', showNextProject);
