@@ -80,7 +80,7 @@ web-header h1 {
   @media screen and (max-width: 767px) {
     /* 在宽度小于 767px 的屏幕上应用以下样式 */
     web-header ul {
-      font-size: 4vw
+      font-size: 4vw;
       display: flex;
       flex-direction: row;
       list-style: none;
@@ -2598,7 +2598,7 @@ body {
     font-family: "Noto Sans TC";
     }
     
-  #projects {
+    #projects {
     
     background-color: rgba(255, 255, 255, 0);
     padding: 50px;
@@ -2622,6 +2622,7 @@ body {
     margin-right: 30px;
     margin-bottom: 30px;
     width: 30%;
+    position: relative;
     }
     
     .project img {
@@ -2630,15 +2631,26 @@ body {
     height: auto;
     margin-bottom: 20px;
     }
-    
-    .project p {
+    .project-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      color: #fff;
+    }
+    .project-overlay p {
+
     font-size: 16px;
     line-height: 1.5;
     color: #020a0a;
     margin-bottom: 0;
     font-family: "Noto Sans TC";
     }
-    
+    .project-overlay h3 {
+      margin: 0;
+      font-size: 18px;
+    }
     .project:last-of-type {
     margin-right: 0;
     }
