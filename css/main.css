@@ -177,7 +177,7 @@ web-header nav ul li a {
 }
 
 /* 響應式布局 */
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   web-header h1 {
     font-size: 6vw;
   }
